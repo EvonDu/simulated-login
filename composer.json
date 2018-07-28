@@ -1,0 +1,17 @@
+{
+    "name": "admin/login",
+    "authors": [
+        {
+            "name": "EvonDu",
+            "email": "298550274@qq.com"
+        }
+    ],
+    "require": {},
+    "autoload":{
+        "psr-4":{
+            "actions\\":"actions/",
+            "config\\":"config/",
+            "lib\\":"lib/"
+        }
+    }
+}
