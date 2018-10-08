@@ -8,14 +8,14 @@ class Test{
         //hint信息
         echo "Action Test\n";
 
-        //设置登录信息
-        $url = "http://localhost/yii-admin2-test/backend/web/index.php?r=site%2Ftest";
+        //获取配置
+        $config = include(dirname(__DIR__)."/config/login.php");
 
         //执行登录
-        $result = CurlTools::getCurl($url);
+        $result = CurlTools::getCurl($config["test_url"]);
 
         //输出信息
-        echo $url."\n";
+        echo $config["test_url"]."\n";
         echo $result."\n";
     }
 }
